@@ -1,0 +1,12 @@
+version: "3.9"
+services:
+
+    # SMPPSim
+    smppsim:
+        container_name: smppsim
+        build: deploy/smppsim
+        ports:
+            - "88:88"
+            - "2775:2775"
+        environment:
+            TZ: Europe/Paris
